@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalisetty Guru Charan — Data Analyst | SQL · Python · Power BI · Excel</title>
+<meta name="description" content="Portfolio of Kalisetty Guru Charan, an aspiring Data Analyst specializing in SQL, Python, Power BI and Excel. B.Tech CSE student building data-driven solutions.">
+<meta name="keywords" content="Kalisetty Guru Charan, Data Analyst, SQL Developer, Power BI Developer, Business Intelligence Analyst, Python, Excel, Data Analytics Portfolio">
+<meta name="author" content="Kalisetty Guru Charan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gurucharankalisetty.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalisetty Guru Charan — Data Analyst">
+<meta property="og:description" content="Aspiring Data Analyst specializing in SQL, Python, Power BI and Excel. Explore projects, certifications and skills.">
+<meta property="og:image" content="assets/images/profile.jpg">
+<meta property="og:url" content="https://gurucharankalisetty.dev/">
+<meta property="og:site_name" content="Kalisetty Guru Charan — Portfolio">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kalisetty Guru Charan — Data Analyst">
+<meta name="twitter:description" content="Aspiring Data Analyst specializing in SQL, Python, Power BI and Excel.">
+<meta name="twitter:image" content="assets/images/profile.jpg">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kalisetty Guru Charan",
+  "jobTitle": "Aspiring Data Analyst",
+  "email": "mailto:gurucharankalisetty@gmail.com",
+  "telephone": "+91-9493658776",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tirupati",
+    "addressRegion": "Andhra Pradesh",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/kalisetty-guru-charan-676013368",
+    "https://github.com/Gurucharankalisetty",
+    "https://www.hackerrank.com/profile/gurucharankalis1",
+    "https://leetcode.com/u/Gurucharan_Kalisetty/"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "NBKR Institute of Science & Technology"
+  },
+  "knowsAbout": ["SQL", "Python", "Power BI", "Microsoft Excel", "MySQL", "Data Analytics"]
+}
+</script>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%233B82F6%22>&#9702;</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-prompt">guru@portfolio<span class="loader-tilde">:~$</span></span>
+    <span class="loader-cmd" id="loaderCmd"></span><span class="loader-cursor">▊</span>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Cursor glow (decorative, disabled on touch) -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Guru Charan — home">
+      <span class="nav-logo-bracket">&lt;</span>GC<span class="nav-logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about" class="nav-link" data-section="about"><span class="nav-num">01</span>about</a>
+      <a href="#skills" class="nav-link" data-section="skills"><span class="nav-num">02</span>skills</a>
+      <a href="#projects" class="nav-link" data-section="projects"><span class="nav-num">03</span>projects</a>
+      <a href="#certifications" class="nav-link" data-section="certifications"><span class="nav-num">04</span>certs</a>
+      <a href="#education" class="nav-link" data-section="education"><span class="nav-num">05</span>education</a>
+      <a href="#profiles" class="nav-link" data-section="profiles"><span class="nav-num">06</span>profiles</a>
+      <a href="#contact" class="nav-link" data-section="contact"><span class="nav-num">07</span>contact</a>
+    </nav>
+
+    <a href="assets/resume/Gurucharan's Resume.pdf" download class="nav-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+      Resume
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-mesh"></div>
+      <div class="hero-grid"></div>
+      <canvas id="particles" class="hero-particles"></canvas>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">-- running query</p>
+
+        <div class="terminal hero-terminal" role="img" aria-label="Terminal showing a SQL query that selects Guru Charan's analyst profile">
+          <div class="terminal-chrome">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">analyst_profile.sql</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">1</span>
+              <span class="code"><span id="typedQuery"></span><span class="type-cursor" id="typeCursor">|</span></span>
+            </div>
+            <div class="terminal-result" id="terminalResult" aria-hidden="true">
+              <div class="result-row">
+                <span class="result-key">id</span><span class="result-val">01</span>
+                <span class="result-key">name</span><span class="result-val">Kalisetty Guru Charan</span>
+              </div>
+              <div class="result-row">
+                <span class="result-key">role</span><span class="result-val">Aspiring Data Analyst</span>
+              </div>
+              <div class="result-row">
+                <span class="result-key">stack</span><span class="result-val" id="typedStack"></span>
+              </div>
+              <p class="terminal-meta">1 row returned</p>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Kalisetty <span class="text-accent">Guru Charan</span>
+        </h1>
+        <p class="hero-role">
+          Turning raw data into <span class="text-accent-soft">decisions</span> — with SQL, Python, Power BI &amp; Excel.
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/resume/Gurucharan's Resume.pdf" download class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-socials" aria-label="Social profiles">
+          <a href="https://www.linkedin.com/in/kalisetty-guru-charan-676013368" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://github.com/Gurucharankalisetty" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 015 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/Gurucharan_Kalisetty/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" class="social-icon">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 2.5l-8.4 8.4a2.5 2.5 0 000 3.53l5.66 5.66a2.5 2.5 0 003.53 0l3.09-3.09a1.5 1.5 0 00-2.12-2.12l-2.68 2.68-4.6-4.6 7.35-7.35a1.5 1.5 0 00-2.12-2.12l1.29-1.29a1.5 1.5 0 000 0zM9.9 15.8h9.6a1.5 1.5 0 000-3H9.9a1.5 1.5 0 000 3z"/></svg>
+          </a>
+          <a href="https://www.hackerrank.com/profile/gurucharankalis1" target="_blank" rel="noopener noreferrer" aria-label="HackerRank" class="social-icon">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8.5 7.4c.1-.02.2 0 .27.08.5.5 1 1.02 1.44 1.5.1.1.1.24 0 .35-.4.5-.6 1.1-.6 1.8v1.7h5v-1.7c0-.7-.2-1.3-.6-1.8a.25.25 0 010-.35c.44-.48.93-1 1.44-1.5a.28.28 0 01.4 0c.86.85 1.4 1.98 1.4 3.3v5.6c0 .18-.15.32-.32.32h-1.36a.32.32 0 01-.32-.32v-2h-5v2c0 .18-.14.32-.32.32H8.4a.32.32 0 01-.32-.32v-5.6c0-1.32.53-2.45 1.4-3.3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-glow" aria-hidden="true"></div>
+        <div class="hero-photo-frame">
+          <img src="assets/images/profile.jpg" alt="Portrait of Kalisetty Guru Charan" class="hero-photo" width="900" height="1200" fetchpriority="high">
+        </div>
+        <div class="hero-photo-tag">
+          <span class="status-dot"></span> open to opportunities
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span>scroll</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow">-- about</p>
+      <h2 class="section-title">Query: <span class="text-accent">who am I?</span></h2>
+
+      <div class="about-grid">
+        <div class="about-copy" data-reveal>
+          <p>
+            I'm a Computer Science &amp; Engineering student at <strong>NBKR Institute of Science &amp; Technology</strong>,
+            graduating in 2027, with a growing focus on data analytics. What draws me to this field is simple:
+            numbers only matter once they're turned into a decision someone can act on.
+          </p>
+          <p>
+            My toolkit centers on <strong>SQL</strong> for asking the right questions of a database, <strong>Python</strong>
+            for cleaning and shaping data, and <strong>Power BI</strong> and <strong>Excel</strong> for turning that work
+            into dashboards people actually use. I've applied this end-to-end on projects like an e-commerce sales
+            dashboard — from raw data to KPIs a business team could read in seconds.
+          </p>
+          <p>
+            I'm a consistent, hands-on learner — certified in Python, Java, SQL and data analytics — and I'm actively
+            looking for opportunities to solve real business problems with data.
+          </p>
+
+          <div class="about-tags">
+            <span class="tag">Analytical Thinking</span>
+            <span class="tag">Clean Code</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Continuous Learning</span>
+          </div>
+        </div>
+
+        <div class="about-stats" data-reveal>
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">certifications earned</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="2027">0</span>
+            <span class="stat-label">expected graduation</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="7.26" data-decimal="true">0</span>
+            <span class="stat-label">current CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">featured projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow">-- skills</p>
+      <h2 class="section-title">SELECT * FROM <span class="text-accent">skillset</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-group" data-reveal>
+          <div class="skill-group-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            <h3>Programming</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-item-head"><span>Python</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="90"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-item-head"><span>Java</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="75"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-reveal>
+          <div class="skill-group-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            <h3>Databases</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-item-head"><span>SQL</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="85"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-item-head"><span>MySQL</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="80"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-reveal>
+          <div class="skill-group-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 15l4-6 4 3 5-8"/></svg>
+            <h3>Analytics</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-item-head"><span>Power BI</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="80"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-item-head"><span>Microsoft Excel</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="85"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-reveal>
+          <div class="skill-group-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            <h3>Tools</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-item-head"><span>VS Code</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="88"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-item-head"><span>GitHub</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="78"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow">-- projects</p>
+      <h2 class="section-title">JOIN work <span class="text-accent">ON impact</span></h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">JavaScript</span>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">
+            A responsive personal portfolio built from scratch with HTML5, CSS3 and JavaScript — the site you're
+            looking at right now.
+          </p>
+          <ul class="project-features">
+            <li>Modern dark-themed UI with intuitive navigation</li>
+            <li>Dedicated About, Skills, Projects, Certifications, Contact &amp; Resume sections</li>
+            <li>Integrated LinkedIn, GitHub, HackerRank &amp; LeetCode profiles</li>
+            <li>Optimized for cross-browser support, mobile responsiveness &amp; accessibility</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://github.com/Gurucharankalisetty" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 015 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18M7 15l4-6 4 3 5-8"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge">Excel</span><span class="badge">SQL</span><span class="badge">Python</span><span class="badge">Power BI</span>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Sales Analysis Dashboard</h3>
+          <p class="project-desc">
+            An interactive dashboard analyzing sales, profit, customer and product data end-to-end — from raw data
+            to a decision-ready Power BI report.
+          </p>
+          <ul class="project-features">
+            <li>SQL queries + Python for data cleaning &amp; transformation</li>
+            <li>Power BI dashboards with KPIs, interactive slicers, charts &amp; trend analysis</li>
+            <li>Data preparation &amp; validation in Excel and Python for accuracy</li>
+            <li>Surfaced sales trends, top products, customer behavior &amp; regional performance</li>
+          </ul>
+          <div class="project-actions">
+            <span class="project-note">Case study available on request</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section-alt" id="certifications">
+    <div class="section-inner">
+      <p class="eyebrow">-- certifications</p>
+      <h2 class="section-title">INSERT INTO <span class="text-accent">credentials</span></h2>
+
+      <div class="certs-grid">
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a5 5 0 100-10 5 5 0 000 10z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <h3 class="cert-name">Python Course for Beginners: Mastering the Essentials</h3>
+          <p class="cert-org">Scalar</p>
+        </div>
+
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a5 5 0 100-10 5 5 0 000 10z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <h3 class="cert-name">Java Course — Mastering the Fundamentals</h3>
+          <p class="cert-org">Scalar</p>
+        </div>
+
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a5 5 0 100-10 5 5 0 000 10z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <h3 class="cert-name">Data Analytics with Python</h3>
+          <p class="cert-org">NPTEL</p>
+        </div>
+
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a5 5 0 100-10 5 5 0 000 10z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <h3 class="cert-name">Introduction to SQL</h3>
+          <p class="cert-org">Simplilearn</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <p class="eyebrow">-- education</p>
+      <h2 class="section-title">ORDER BY <span class="text-accent">timeline</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2023 — 2027</p>
+            <h3 class="timeline-title">B.Tech, Computer Science &amp; Engineering</h3>
+            <p class="timeline-org">NBKR Institute of Science &amp; Technology, Vidyanagar</p>
+            <p class="timeline-meta">CGPA: 7.26</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2021 — 2023</p>
+            <h3 class="timeline-title">Intermediate (MPC)</h3>
+            <p class="timeline-org">Sri Vema Jr College, Naidupeta</p>
+            <p class="timeline-meta">Percentage: 91%</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2020 — 2021</p>
+            <h3 class="timeline-title">SSC (Secondary School Certificate)</h3>
+            <p class="timeline-org">ZPP High School, Chillamanuchenu</p>
+            <p class="timeline-meta">CGPA: 9.2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CODING PROFILES -->
+  <section class="section section-alt" id="profiles">
+    <div class="section-inner">
+      <p class="eyebrow">-- profiles</p>
+      <h2 class="section-title">UNION ALL <span class="text-accent">platforms</span></h2>
+
+      <div class="profiles-grid">
+        <a href="https://github.com/Gurucharankalisetty" target="_blank" rel="noopener noreferrer" class="profile-card" data-reveal>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 015 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          <h3>GitHub</h3>
+          <p>Repositories, commits &amp; open-source contributions.</p>
+          <span class="profile-visit">Visit profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kalisetty-guru-charan-676013368" target="_blank" rel="noopener noreferrer" class="profile-card" data-reveal>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          <h3>LinkedIn</h3>
+          <p>Professional background &amp; network.</p>
+          <span class="profile-visit">Visit profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+
+        <a href="https://leetcode.com/u/Gurucharan_Kalisetty/" target="_blank" rel="noopener noreferrer" class="profile-card" data-reveal>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 2.5l-8.4 8.4a2.5 2.5 0 000 3.53l5.66 5.66a2.5 2.5 0 003.53 0l3.09-3.09a1.5 1.5 0 00-2.12-2.12l-2.68 2.68-4.6-4.6 7.35-7.35a1.5 1.5 0 00-2.12-2.12l1.29-1.29a1.5 1.5 0 000 0zM9.9 15.8h9.6a1.5 1.5 0 000-3H9.9a1.5 1.5 0 000 3z"/></svg>
+          <h3>LeetCode</h3>
+          <p>Problem solving &amp; algorithmic practice.</p>
+          <span class="profile-visit">Visit profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+
+        <a href="https://www.hackerrank.com/profile/gurucharankalis1" target="_blank" rel="noopener noreferrer" class="profile-card" data-reveal>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8.5 7.4c.1-.02.2 0 .27.08.5.5 1 1.02 1.44 1.5.1.1.1.24 0 .35-.4.5-.6 1.1-.6 1.8v1.7h5v-1.7c0-.7-.2-1.3-.6-1.8a.25.25 0 010-.35c.44-.48.93-1 1.44-1.5a.28.28 0 01.4 0c.86.85 1.4 1.98 1.4 3.3v5.6c0 .18-.15.32-.32.32h-1.36a.32.32 0 01-.32-.32v-2h-5v2c0 .18-.14.32-.32.32H8.4a.32.32 0 01-.32-.32v-5.6c0-1.32.53-2.45 1.4-3.3z"/></svg>
+          <h3>HackerRank</h3>
+          <p>Coding challenges &amp; skill badges.</p>
+          <span class="profile-visit">Visit profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section" id="resume">
+    <div class="section-inner">
+      <p class="eyebrow">-- resume</p>
+      <h2 class="section-title">EXPORT <span class="text-accent">résumé.pdf</span></h2>
+
+      <div class="resume-panel" data-reveal>
+        <div class="resume-preview">
+          <div class="resume-preview-page">
+            <div class="rp-line rp-line-title"></div>
+            <div class="rp-line rp-line-sub"></div>
+            <div class="rp-block"></div>
+            <div class="rp-line"></div>
+            <div class="rp-line short"></div>
+            <div class="rp-block"></div>
+            <div class="rp-line"></div>
+            <div class="rp-line short"></div>
+          </div>
+          <div class="resume-preview-glow" aria-hidden="true"></div>
+        </div>
+        <div class="resume-copy">
+          <h3>One PDF, everything a recruiter needs</h3>
+          <p>Education, skills, projects and certifications — kept current and ready to share.</p>
+          <a href="assets/resume/Gurucharan's Resume.pdf" download class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <p class="eyebrow">-- contact</p>
+      <h2 class="section-title">INSERT INTO <span class="text-accent">inbox</span></h2>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <p class="contact-lead">Have a role, a project, or just a question about my work? I read every message.</p>
+
+          <a href="mailto:gurucharankalisetty@gmail.com" class="contact-item">
+            <span class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            gurucharankalisetty@gmail.com
+          </a>
+          <a href="tel:+919493658776" class="contact-item">
+            <span class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.34 1.78.66 2.61a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.47-1.27a2 2 0 012.11-.45c.83.32 1.71.54 2.61.66A2 2 0 0122 16.92z"/></svg></span>
+            +91 94936 58776
+          </a>
+          <div class="contact-item contact-item-static">
+            <span class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            Tirupati, Andhra Pradesh, India
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-reveal novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required>
+              <span class="form-error" id="err-name"></span>
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required>
+              <span class="form-error" id="err-email"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" required>
+            <span class="form-error" id="err-subject"></span>
+          </div>
+          <div class="form-field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+            <span class="form-error" id="err-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="contactSubmit">
+            <span class="btn-label">Send Message</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <a href="#hero" class="nav-logo"><span class="nav-logo-bracket">&lt;</span>GC<span class="nav-logo-bracket">/&gt;</span></a>
+      <p class="footer-tagline">Aspiring Data Analyst — SQL · Python · Power BI · Excel</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/kalisetty-guru-charan-676013368" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="https://github.com/Gurucharankalisetty" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 015 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
+        <a href="https://leetcode.com/u/Gurucharan_Kalisetty/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" class="social-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 2.5l-8.4 8.4a2.5 2.5 0 000 3.53l5.66 5.66a2.5 2.5 0 003.53 0l3.09-3.09a1.5 1.5 0 00-2.12-2.12l-2.68 2.68-4.6-4.6 7.35-7.35a1.5 1.5 0 00-2.12-2.12l1.29-1.29a1.5 1.5 0 000 0zM9.9 15.8h9.6a1.5 1.5 0 000-3H9.9a1.5 1.5 0 000 3z"/></svg></a>
+        <a href="https://www.hackerrank.com/profile/gurucharankalis1" target="_blank" rel="noopener noreferrer" aria-label="HackerRank" class="social-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8.5 7.4c.1-.02.2 0 .27.08.5.5 1 1.02 1.44 1.5.1.1.1.24 0 .35-.4.5-.6 1.1-.6 1.8v1.7h5v-1.7c0-.7-.2-1.3-.6-1.8a.25.25 0 010-.35c.44-.48.93-1 1.44-1.5a.28.28 0 01.4 0c.86.85 1.4 1.98 1.4 3.3v5.6c0 .18-.15.32-.32.32h-1.36a.32.32 0 01-.32-.32v-2h-5v2c0 .18-.14.32-.32.32H8.4a.32.32 0 01-.32-.32v-5.6c0-1.32.53-2.45 1.4-3.3z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <a href="mailto:gurucharankalisetty@gmail.com">gurucharankalisetty@gmail.com</a>
+      <a href="tel:+919493658776">+91 94936 58776</a>
+      <span>Tirupati, Andhra Pradesh, India</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Kalisetty Guru Charan. Designed &amp; developed by Kalisetty Guru Charan.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5m0 0l-7 7m7-7l7 7"/></svg>
+    </button>
+  </div>
+</footer>
+
+<!-- Floating social bar (desktop) -->
+<div class="floating-social" aria-hidden="true">
+  <span class="floating-line"></span>
+  <a href="https://www.linkedin.com/in/kalisetty-guru-charan-676013368" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+  <a href="https://github.com/Gurucharankalisetty" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 015 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
+</div>
+
+<!-- EmailJS SDK (used by the contact form — see README for setup) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
